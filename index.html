@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Konverter Suhu</title>
+</head>
+<body>
+        <!-- HEADER -->
+    <header>
+      <h2 id="logo">TemP Converter</h2>
+      <nav id="navigation-link">
+        <ul>
+          <li>
+            <a
+              class="button-link"
+              href="https://www.linkedin.com/in/muhammad-zainuddin-basyar/"
+              target="_blank"
+              >Linkedin Saya</a
+            >
+          </li>
+          <li>
+            <a
+              class="button-link"
+              href="https://revou.co/?utm_source=sem&utm_medium=cpc&utm_content=id_fp_branded_high_conversion_revou--revou_e_c&gad_source=1&gclid=Cj0KCQiAoKeuBhCoARIsAB4WxtfEJoK2xyq8KHioSLPwkL1tMBWv_9ki-yyDPbnomcl_ArSV5XESW9EaAiDnEALw_wcB#our-programs"
+              target="_blank"
+            >
+              Website RevoU
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <button id="hamburger-menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <nav id="navigation-responsive" class="menu-list">
+        <ul>
+          <li>
+            <a
+              class="nav-link"
+              href="https://www.linkedin.com/in/muhammad-zainuddin-basyar/"
+              target="_blank"
+              >Linkedin Saya</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="https://revou.co/?utm_source=sem&utm_medium=cpc&utm_content=id_fp_branded_high_conversion_revou--revou_e_c&gad_source=1&gclid=Cj0KCQiAoKeuBhCoARIsAB4WxtfEJoK2xyq8KHioSLPwkL1tMBWv_9ki-yyDPbnomcl_ArSV5XESW9EaAiDnEALw_wcB#our-programs"
+              target="_blank"
+            >
+              Website RevoU
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- END HEADER -->
+    <section id="main-content">
+      <section id="convert-section">
+        <div id="converter-title">
+          <h1>Temperature Converter</h1>
+          <select class="select" id="select-type-convert">
+            <option value="ctf">Celcius to Fahrenheit</option>
+            <option value="ftc">Fahrenheit to Celcius</option>
+          </select>
+        </div>
+        <div id="title-converter">
+          <p id="title-from">Celcius (°C)</p>
+          <p id="title-result">Fahrenheit (°F)</p>
+        </div>
+        <form id="form-converter">
+          <div id="converter-input">
+            <input
+              placeholder="Input Number"
+              type="number"
+              id="input-from"
+              name="number"
+            />
+            <p>=</p>
+            <input placeholder="Result" disabled id="input-result" />
+          </div>
+          <button id="button-convert">Convert</button>
+        </form>
+        <textarea id="converter-formula" disabled></textarea>
+        <p id="alert">* To see the latest history, please reload the page</p>
+      </section>
+      <section id="history-section">
+        <div id="history-title-section">
+          <h1>History Convert</h1>
+          <i class="fa-solid fa-trash-can" id="trash-icon"></i>
+        </div>
+        <div id="history-list"></div>
+      </section>
+    </section>
+    <!-- CONTENT -->
+    <!-- MAIN CONTENT -->
+    <!-- FOOTER -->
+    <footer></footer>
+    <!-- END FOOTER -->
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
